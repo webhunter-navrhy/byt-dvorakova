@@ -72,7 +72,7 @@
         </div>
         <p class="mistnost-text">{{ m.text }}</p>
         <div class="galerie" tabindex="0" aria-label="Fotografie – {{ m.nazev }}">
-          {% for f in m.foto %}<button class="zvetsit" data-lb="{{ img_url(f.soubor, 1920) }}" data-alt="{{ f.alt }}">{{ img(f.soubor, f.alt, sizes='(min-width: 64rem) 30vw, 70vw', eager=False) }}</button>{% endfor %}
+          {% for f in m.foto %}<button class="zvetsit" data-lb="{{ img_url(f.soubor, 1920) }}" data-alt="{{ f.alt }}">{{ img(f.soubor, f.alt, sizes='(min-width: 64rem) 34vw, 640px', eager=False) }}</button>{% endfor %}
         </div>
         {% if m.foto|length > 1 %}<div class="galerie-sipky"><button type="button" class="sipka" data-smer="-1" aria-label="Předchozí fotky">←</button><button type="button" class="sipka" data-smer="1" aria-label="Další fotky">→</button></div>{% endif %}
       </article>
