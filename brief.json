@@ -1,0 +1,56 @@
+{
+ "firma": "Martin Gašperik (soukromý prodávající)",
+ "obor": "prodej bytu 3+1 – samostatná prodejní stránka",
+ "mesto": "Nový Jičín, Dvořákova",
+ "ico": null,
+ "kontakty": {
+  "jmeno": "Martin Gašperik",
+  "telefon": "+420 773 977 905",
+  "email": "martingasperik@gmail.com"
+ },
+ "cilova_skupina": "zájemci o byt v Novém Jičíně (rodiny, páry), kupující z inzerátu",
+ "ton": "věcný, klidný, bez realitních frází",
+ "brand": {
+  "logo": null,
+  "barvy": "bez brandu – paleta z fotek bytu (dub, cihlová fasáda domu)",
+  "pismo": null
+ },
+ "fotky": "39 fotek z inzerátu Sreality (prodávající), zdroje v img/zdroje.txt",
+ "fakta": [
+  {
+   "fakt": "Byt 3+1, 68 m², balkon 5 m², sklepní kóje 3 m², 4. patro s výtahem, osobní vlastnictví",
+   "zdroj": "https://www.sreality.cz/detail/prodej/byt/3+1/novy-jicin-novy-jicin-dvorakova/3700650060"
+  },
+  {
+   "fakt": "Cena 4 590 000 Kč",
+   "zdroj": "Sreality inzerát"
+  },
+  {
+   "fakt": "Rekonstrukce 2022, kuchyň na míru, spotřebiče Electrolux, pračka a sušička AEG",
+   "zdroj": "Sreality inzerát"
+  },
+  {
+   "fakt": "Dům panelový po revitalizaci, dálkové topení, energetická třída C",
+   "zdroj": "Sreality inzerát"
+  },
+  {
+   "fakt": "Volné od ledna 2027, vybavení po dohodě",
+   "zdroj": "Sreality inzerát"
+  },
+  {
+   "fakt": "Vzdálenosti v okolí (vzdušnou čarou)",
+   "zdroj": "Sreality POI / Mapy.cz"
+  },
+  {
+   "fakt": "Půdorys",
+   "zdroj": "půdorys z fotek inzerátu, překreslen do SVG"
+  }
+ ],
+ "chybi": [
+  "číslo popisné domu (v inzerátu jen ulice)",
+  "potvrzení kontaktů a souhlas se zveřejněním telefonu a e-mailu na webu",
+  "lepší fotky domu zvenku a výhledu z balkonu",
+  "plochy jednotlivých místností (do půdorysu)",
+  "kam mají chodit zprávy z formuláře (zatím ukázkový režim)"
+ ]
+}

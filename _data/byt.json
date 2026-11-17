@@ -1,0 +1,371 @@
+{
+ "cena": "4 590 000 Kč",
+ "cena_m2": "67 500 Kč za m²",
+ "uvod": "Tři neprůchozí pokoje, kuchyň na míru a balkon. Byt prošel rekonstrukcí v roce 2022, dům revitalizací. Volný bude od ledna 2027.",
+ "uvod2": "Byt je v osobním vlastnictví, ve 4. patře panelového domu s výtahem v Dvořákově ulici v Novém Jičíně. Vybavení může po dohodě zůstat.",
+ "mistnosti": [
+  {
+   "id": "obyvak",
+   "nazev": "Obývací pokoj",
+   "text": "Největší místnost bytu, s východem na balkon. Neprůchozí, stejně jako oba další pokoje.",
+   "foto": [
+    {
+     "soubor": "obyvak-4.jpg",
+     "alt": "Obývací pokoj se zelenou sedačkou a dřevěnou komodou"
+    },
+    {
+     "soubor": "obyvak-2.jpg",
+     "alt": "Obývací pokoj s televizní stěnou a nepřímým osvětlením"
+    },
+    {
+     "soubor": "obyvak-1.jpg",
+     "alt": "Okno obývacího pokoje s výhledem"
+    },
+    {
+     "soubor": "obyvak-3.jpg",
+     "alt": "Obývací pokoj, pohled ke dveřím"
+    },
+    {
+     "soubor": "obyvak-5.jpg",
+     "alt": "Stěna s televizí a podsvícením"
+    }
+   ]
+  },
+  {
+   "id": "balkon",
+   "nazev": "Balkon",
+   "text": "Balkon o ploše 5 m² navazuje na obývací pokoj.",
+   "foto": [
+    {
+     "soubor": "balkon.jpg",
+     "alt": "Balkon s křeslem"
+    }
+   ]
+  },
+  {
+   "id": "loznice",
+   "nazev": "Ložnice",
+   "text": "Samostatná ložnice. Od obývacího pokoje ji dělí komora, takže pokoje nemají společnou stěnu.",
+   "foto": [
+    {
+     "soubor": "loznice-2.jpg",
+     "alt": "Ložnice s manželskou postelí a šatní skříní"
+    },
+    {
+     "soubor": "loznice-1.jpg",
+     "alt": "Ložnice s oknem"
+    },
+    {
+     "soubor": "loznice-3.jpg",
+     "alt": "Ložnice, pohled ke dveřím"
+    }
+   ]
+  },
+  {
+   "id": "komora",
+   "nazev": "Komora",
+   "text": "Komora mezi obývacím pokojem a ložnicí, s regály na zásoby.",
+   "foto": [
+    {
+     "soubor": "komora.jpg",
+     "alt": "Komora s regály"
+    }
+   ]
+  },
+  {
+   "id": "pokoj",
+   "nazev": "Pokoj",
+   "text": "Třetí samostatný pokoj. Dnes slouží jako pracovna, hodí se i jako dětský pokoj nebo pokoj pro hosty.",
+   "foto": [
+    {
+     "soubor": "pokoj-1.jpg",
+     "alt": "Pokoj zařízený jako pracovna"
+    },
+    {
+     "soubor": "pokoj-2.jpg",
+     "alt": "Pokoj s křeslem u okna"
+    },
+    {
+     "soubor": "pokoj-3.jpg",
+     "alt": "Pokoj s knihovnou"
+    },
+    {
+     "soubor": "pokoj-4.jpg",
+     "alt": "Pohled z chodby do pokoje a ložnice"
+    }
+   ]
+  },
+  {
+   "id": "kuchyne",
+   "nazev": "Kuchyně",
+   "text": "Kuchyňská linka na míru se spotřebiči Electrolux. U okna je místo na jídelní stůl.",
+   "foto": [
+    {
+     "soubor": "kuchyne-5.jpg",
+     "alt": "Kuchyňská linka na míru s dřevěnou pracovní deskou"
+    },
+    {
+     "soubor": "kuchyne-2.jpg",
+     "alt": "Jídelní kout u okna kuchyně"
+    },
+    {
+     "soubor": "kuchyne-4.jpg",
+     "alt": "Rohová kuchyňská linka"
+    },
+    {
+     "soubor": "kuchyne-1.jpg",
+     "alt": "Kuchyně, pohled od dveří"
+    },
+    {
+     "soubor": "kuchyne-3.jpg",
+     "alt": "Kuchyně s vestavěnou troubou"
+    },
+    {
+     "soubor": "kuchyne-8.jpg",
+     "alt": "Pracovní deska s varnou deskou"
+    },
+    {
+     "soubor": "kuchyne-6.jpg",
+     "alt": "Vysoké skříně s vestavěnými spotřebiči"
+    },
+    {
+     "soubor": "kuchyne-9.jpg",
+     "alt": "Skříňky kuchyňské linky"
+    },
+    {
+     "soubor": "kuchyne-7.jpg",
+     "alt": "Detail spotřebičů"
+    }
+   ]
+  },
+  {
+   "id": "koupelna",
+   "nazev": "Koupelna",
+   "text": "Koupelna se sprchovým koutem s podomítkovou baterií a WC. Pračka a sušička AEG mají své místo nad sebou.",
+   "foto": [
+    {
+     "soubor": "koupelna-4.jpg",
+     "alt": "Koupelna s pračkou a sušičkou nad sebou"
+    },
+    {
+     "soubor": "koupelna-3.jpg",
+     "alt": "Sprchový kout s podomítkovou baterií"
+    },
+    {
+     "soubor": "koupelna-2.jpg",
+     "alt": "Koupelna se sprchovým koutem a WC"
+    },
+    {
+     "soubor": "koupelna-1.jpg",
+     "alt": "Koupelna s umyvadlem"
+    },
+    {
+     "soubor": "koupelna-5.jpg",
+     "alt": "Koupelna, pohled od dveří"
+    }
+   ]
+  },
+  {
+   "id": "chodba",
+   "nazev": "Chodba",
+   "text": "Přes celou chodbu vede vestavěná skříň. Z chodby se vchází do všech místností.",
+   "foto": [
+    {
+     "soubor": "chodba-1.jpg",
+     "alt": "Chodba s vestavěnou skříní"
+    },
+    {
+     "soubor": "chodba-3.jpg",
+     "alt": "Vstupní dveře a nika s osvětlením"
+    },
+    {
+     "soubor": "chodba-2.jpg",
+     "alt": "Chodba s dřevěnými dveřmi"
+    },
+    {
+     "soubor": "chodba-4.jpg",
+     "alt": "Vestavěná skříň přes celou chodbu"
+    },
+    {
+     "soubor": "chodba-5.jpg",
+     "alt": "Chodba, pohled ke vstupu"
+    },
+    {
+     "soubor": "chodba-6.jpg",
+     "alt": "Roh chodby se skříní"
+    },
+    {
+     "soubor": "chodba-7.jpg",
+     "alt": "Dveře do pokojů"
+    },
+    {
+     "soubor": "chodba-8.jpg",
+     "alt": "Chodba, pohled do obývacího pokoje"
+    }
+   ]
+  }
+ ],
+ "parametry": [
+  [
+   "Dispozice",
+   "3+1"
+  ],
+  [
+   "Plocha",
+   "68 m²"
+  ],
+  [
+   "Podlaží",
+   "4. patro, výtah"
+  ],
+  [
+   "Balkon",
+   "5 m²"
+  ],
+  [
+   "Sklepní kóje",
+   "3 m²"
+  ],
+  [
+   "Vlastnictví",
+   "osobní"
+  ],
+  [
+   "Dům",
+   "panelový, po revitalizaci"
+  ],
+  [
+   "Vytápění",
+   "dálkové"
+  ],
+  [
+   "Energetická třída",
+   "C – úsporná"
+  ],
+  [
+   "Volný od",
+   "ledna 2027"
+  ]
+ ],
+ "rekonstrukce": [
+  "Kuchyňská linka na míru, spotřebiče Electrolux",
+  "Vestavěná skříň přes celou chodbu",
+  "Plastová okna"
+ ],
+ "dum": [
+  [
+   "Revitalizace",
+   "Dům je zateplený a má novou fasádu. Úvěr na revitalizaci je splacený, náklady na bydlení jsou proto nízké."
+  ],
+  [
+   "Stav",
+   "Panelový dům ve velmi dobrém stavu, s výtahem."
+  ],
+  [
+   "Parkování",
+   "Na veřejných místech přímo před domem."
+  ],
+  [
+   "Sklep",
+   "K bytu patří sklepní kóje o ploše 3 m²."
+  ]
+ ],
+ "okoli": [
+  {
+   "nazev": "Z-BOX",
+   "m": 55,
+   "skupina": "denně"
+  },
+  {
+   "nazev": "Dětské hřiště",
+   "m": 69,
+   "skupina": "děti"
+  },
+  {
+   "nazev": "Potraviny HRUŠKA",
+   "m": 107,
+   "skupina": "denně"
+  },
+  {
+   "nazev": "Zastávka MHD Máchova",
+   "m": 129,
+   "skupina": "doprava"
+  },
+  {
+   "nazev": "L&M Kitchen & Wine, restaurace",
+   "m": 138,
+   "skupina": "volno"
+  },
+  {
+   "nazev": "ORL ambulance",
+   "m": 148,
+   "skupina": "zdraví"
+  },
+  {
+   "nazev": "Mateřská škola Trojlístek",
+   "m": 166,
+   "skupina": "děti"
+  },
+  {
+   "nazev": "Hostinec Pomněnka",
+   "m": 225,
+   "skupina": "volno"
+  },
+  {
+   "nazev": "Veterina Máchovka VET",
+   "m": 238,
+   "skupina": "zdraví"
+  },
+  {
+   "nazev": "Mendelova lékárna",
+   "m": 283,
+   "skupina": "zdraví"
+  },
+  {
+   "nazev": "Pošta Nový Jičín 1",
+   "m": 323,
+   "skupina": "denně"
+  },
+  {
+   "nazev": "OC Javor",
+   "m": 347,
+   "skupina": "denně"
+  },
+  {
+   "nazev": "Bankomat Moneta",
+   "m": 347,
+   "skupina": "denně"
+  },
+  {
+   "nazev": "Cukrárna Matysková",
+   "m": 511,
+   "skupina": "volno"
+  },
+  {
+   "nazev": "Školní hřiště Komenského",
+   "m": 569,
+   "skupina": "děti"
+  },
+  {
+   "nazev": "Kino Květen",
+   "m": 672,
+   "skupina": "volno"
+  },
+  {
+   "nazev": "Beskydské divadlo",
+   "m": 689,
+   "skupina": "volno"
+  },
+  {
+   "nazev": "Vlakové nádraží Nový Jičín město",
+   "m": 928,
+   "skupina": "doprava"
+  }
+ ],
+ "prodavajici": {
+  "jmeno": "Martin Gašperik",
+  "telefon": "+420 773 977 905",
+  "email": "martingasperik@gmail.com"
+ },
+ "mapa": "https://mapy.cz/zakladni?q=49.592780%2C18.017496&z=17"
+}

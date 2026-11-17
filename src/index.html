@@ -1,0 +1,150 @@
+{% extends "_base.html" %}
+{% set titulek = 'Prodej bytu 3+1, 68 m², Dvořákova, Nový Jičín' %}
+{% set cesta = '' %}
+{% set b = data.byt %}
+{% block obsah %}
+
+<section class="hero" aria-labelledby="nadpis">
+  {{ img('obyvak-4.jpg', 'Obývací pokoj bytu v Dvořákově ulici se zelenou sedačkou', sizes='100vw', cls='hero-foto') }}
+  <div class="hero-in">
+    <h1 id="nadpis"><span class="hero-nad">Na prodej · Nový Jičín</span><span class="hero-ulice">Dvořákova</span><span class="hero-pod">Byt 3+1 po&nbsp;rekonstrukci, 68&nbsp;m², 4.&nbsp;patro s&nbsp;výtahem</span></h1>
+    <div class="hero-cena">
+      <p class="cena">{{ b.cena }}</p>
+      <div class="hero-tl">
+        <a class="tl" href="#prohlidka">Domluvit prohlídku</a>
+        <a class="tl tl-obrys" href="#pudorys">Projít půdorys</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="uvod" id="byt">
+  <div class="uvod-in">
+    <div class="uvod-text odhal">
+      <p class="uvod-velky">{{ b.uvod }}</p>
+      <p class="uvod-maly">{{ b.uvod2 }}</p>
+    </div>
+    <figure class="uvod-foto odhal">
+      <button class="zvetsit" data-lb="{{ img_url('obyvak-1.jpg', 1920) }}" data-alt="Okno obývacího pokoje s výhledem">{{ img('obyvak-1.jpg', 'Okno obývacího pokoje s výhledem', sizes='(min-width: 64rem) 40vw, 100vw') }}</button>
+    </figure>
+    <dl class="parametry odhal">
+      {% for p in b.parametry %}<div><dt>{{ p[0] }}</dt><dd>{{ p[1] }}</dd></div>{% endfor %}
+      <div class="parametry-cena"><dt>Cena</dt><dd>{{ b.cena }} <span>{{ b.cena_m2 }}</span></dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="pudorys" id="pudorys" aria-labelledby="pudorys-nadpis">
+  <div class="pudorys-hlava">
+    <h2 id="pudorys-nadpis">Projděte si byt</h2>
+    <p>Klikněte na místnost v&nbsp;půdorysu a&nbsp;uvidíte její fotky.</p>
+  </div>
+  <div class="pudorys-in">
+    <div class="plan">
+      <svg viewBox="16 14 1504 990" role="group" aria-label="Půdorys bytu 3+1" class="plan-svg">
+        <path class="plan-zdi" d="M34 22H1358V610H762V982H34Z"/>
+        <rect class="plan-balkon-ram" x="1358" y="40" width="150" height="558"/>
+        <g class="m" data-m="balkon" tabindex="0" role="button" aria-label="Balkon"><rect x="1366" y="48" width="134" height="542"/><text x="1433" y="319" transform="rotate(-90 1433 319)">Balkon</text></g>
+        <g class="m" data-m="loznice" tabindex="0" role="button" aria-label="Ložnice"><rect x="62" y="42" width="660" height="303"/><text x="392" y="200">Ložnice</text></g>
+        <g class="m" data-m="komora" tabindex="0" role="button" aria-label="Komora"><rect x="742" y="42" width="110" height="303"/><text x="797" y="194" transform="rotate(-90 797 194)">Komora</text></g>
+        <g class="m" data-m="obyvak" tabindex="0" role="button" aria-label="Obývací pokoj"><rect x="874" y="42" width="458" height="546"/><text x="1103" y="306">Obývací pokoj</text></g>
+        <g class="m" data-m="pokoj" tabindex="0" role="button" aria-label="Pokoj"><rect x="62" y="362" width="483" height="216"/><text x="303" y="478">Pokoj</text></g>
+        <g class="m" data-m="kuchyne" tabindex="0" role="button" aria-label="Kuchyně"><rect x="62" y="597" width="266" height="365"/><text x="195" y="788">Kuchyně</text></g>
+        <g class="m" data-m="koupelna" tabindex="0" role="button" aria-label="Koupelna"><rect x="348" y="707" width="198" height="255"/><text x="447" y="842">Koupelna</text></g>
+        <g class="m" data-m="chodba" tabindex="0" role="button" aria-label="Chodba"><path d="M562 362H852V590H742V962H565V688H346V597H562Z"/><text x="654" y="830" transform="rotate(-90 654 830)">Chodba</text></g>
+        <g class="plan-dvere" aria-hidden="true">
+          <rect x="850" y="440" width="26" height="90"/><rect x="600" y="343" width="80" height="21"/><rect x="768" y="343" width="62" height="21"/>
+          <rect x="543" y="430" width="21" height="80"/><rect x="326" y="612" width="22" height="64"/><rect x="420" y="686" width="72" height="23"/>
+          <rect x="1330" y="150" width="30" height="96"/><rect x="606" y="960" width="98" height="24"/>
+        </g>
+        <path class="plan-vstup" d="M655 1000l-16-14h32z" aria-hidden="true"/>
+      </svg>
+      <ul class="plan-seznam" role="list">
+        {% for m in b.mistnosti %}<li><button type="button" data-m="{{ m.id }}">{{ m.nazev }}</button></li>{% endfor %}
+      </ul>
+    </div>
+    <div class="mistnosti" aria-live="polite">
+      {% for m in b.mistnosti %}
+      <article class="mistnost" data-panel="{{ m.id }}" {% if not loop.first %}hidden{% endif %}>
+        <div class="mistnost-hlava">
+          <h3>{{ m.nazev }}</h3>
+          <p class="mistnost-pocet">{{ m.foto|length }} {{ 'fotografie' if m.foto|length in (2,3,4) else ('fotografie' if m.foto|length == 1 else 'fotografií') }}</p>
+        </div>
+        <p class="mistnost-text">{{ m.text }}</p>
+        <div class="galerie" tabindex="0" aria-label="Fotografie – {{ m.nazev }}">
+          {% for f in m.foto %}<button class="zvetsit" data-lb="{{ img_url(f.soubor, 1920) }}" data-alt="{{ f.alt }}">{{ img(f.soubor, f.alt, sizes='(min-width: 64rem) 30vw, 70vw', eager=False) }}</button>{% endfor %}
+        </div>
+        {% if m.foto|length > 1 %}<div class="galerie-sipky"><button type="button" class="sipka" data-smer="-1" aria-label="Předchozí fotky">←</button><button type="button" class="sipka" data-smer="1" aria-label="Další fotky">→</button></div>{% endif %}
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="rekon" aria-labelledby="rekon-nadpis">
+  <figure class="rekon-velka odhal">
+    <button class="zvetsit" data-lb="{{ img_url('kuchyne-5.jpg', 1920) }}" data-alt="Kuchyňská linka na míru">{{ img('kuchyne-5.jpg', 'Kuchyňská linka na míru s dřevěnou pracovní deskou a spotřebiči Electrolux', sizes='(min-width: 80rem) 72rem, 100vw') }}</button>
+  </figure>
+  <div class="rekon-in">
+    <div class="rekon-text odhal">
+      <h2 id="rekon-nadpis">Po rekonstrukci z&nbsp;roku 2022</h2>
+      <ul role="list">{% for r in b.rekonstrukce %}<li>{{ r }}</li>{% endfor %}</ul>
+      <p>Koupelna má sprchový kout s&nbsp;podomítkovou baterií, WC a&nbsp;místo pro pračku a&nbsp;sušičku AEG.</p>
+    </div>
+    <figure class="rekon-a odhal"><button class="zvetsit" data-lb="{{ img_url('koupelna-3.jpg', 1920) }}" data-alt="Sprchový kout">{{ img('koupelna-3.jpg', 'Sprchový kout s podomítkovou baterií', sizes='(min-width: 64rem) 24vw, 50vw') }}</button></figure>
+    <figure class="rekon-b odhal"><button class="zvetsit" data-lb="{{ img_url('chodba-1.jpg', 1920) }}" data-alt="Chodba s vestavěnou skříní">{{ img('chodba-1.jpg', 'Chodba s vestavěnou skříní přes celou délku', sizes='(min-width: 64rem) 24vw, 50vw') }}</button></figure>
+  </div>
+</section>
+
+<section class="dum" id="dum" aria-labelledby="dum-nadpis">
+  <div class="dum-in">
+    <div class="dum-text odhal">
+      <h2 id="dum-nadpis">Dům po&nbsp;revitalizaci</h2>
+      <dl>{% for d in b.dum %}<div><dt>{{ d[0] }}</dt><dd>{{ d[1] }}</dd></div>{% endfor %}</dl>
+    </div>
+    <figure class="dum-a odhal"><button class="zvetsit" data-lb="{{ img_url('dum-4.jpg', 1920) }}" data-alt="Dům v Dvořákově ulici">{{ img('dum-4.jpg', 'Panelový dům se zateplenou cihlově červenou fasádou', sizes='(min-width: 64rem) 28vw, 60vw') }}</button></figure>
+    <figure class="dum-b odhal"><button class="zvetsit" data-lb="{{ img_url('dum-1.jpg', 1920) }}" data-alt="Vchod do domu">{{ img('dum-1.jpg', 'Vchod do domu a parkování před domem', sizes='(min-width: 64rem) 20vw, 40vw') }}</button></figure>
+  </div>
+</section>
+
+<section class="okoli" id="okoli" aria-labelledby="okoli-nadpis">
+  <div class="okoli-in">
+    <div class="okoli-hlava odhal">
+      <h2 id="okoli-nadpis">Okolí v&nbsp;metrech</h2>
+      <p>Vzdálenosti od domu vzdušnou čarou podle Mapy.cz. Potraviny, zastávka MHD i&nbsp;mateřská škola jsou do 200&nbsp;metrů.</p>
+      <a class="odkaz" href="{{ b.mapa }}" rel="noopener" target="_blank">Ukázat dům na Mapy.cz</a>
+      <figure class="okoli-foto"><button class="zvetsit" data-lb="{{ img_url('dvur.jpg', 1920) }}" data-alt="Hřiště u domu">{{ img('dvur.jpg', 'Hřiště a sportoviště u domu', sizes='(min-width: 64rem) 36vw, 100vw') }}</button><figcaption>Hřiště a sportoviště u&nbsp;domu</figcaption></figure>
+    </div>
+    <ol class="metr" role="list">
+      {% for o in b.okoli %}
+      <li class="odhal" style="--d: {{ o.m }}"><span class="metr-m">{{ o.m }}&nbsp;m</span><span class="metr-nazev">{{ o.nazev }}</span><span class="metr-cara" aria-hidden="true"></span></li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>
+
+<section class="prohlidka" id="prohlidka" aria-labelledby="prohlidka-nadpis">
+  <div class="prohlidka-in">
+    <div class="prohlidka-text">
+      <h2 id="prohlidka-nadpis">Domluvte si prohlídku</h2>
+      <p>Byt bude volný od ledna 2027. Vybavení může po&nbsp;dohodě zůstat.</p>
+      <div class="kontakt">
+        <p class="kontakt-jmeno">{{ b.prodavajici.jmeno }}<span>prodávající</span></p>
+        <p><a href="tel:{{ b.prodavajici.telefon|replace(' ', '')|replace(' ', '') }}">{{ b.prodavajici.telefon }}</a></p>
+        <p><a href="mailto:{{ b.prodavajici.email }}">{{ b.prodavajici.email }}</a></p>
+      </div>
+      <p class="prohlidka-cena">{{ b.cena }}<span>{{ b.cena_m2 }}</span></p>
+    </div>
+    <div class="prohlidka-form">
+      {% include "_formular.html" %}
+    </div>
+  </div>
+</section>
+
+<dialog class="lb" aria-label="Fotografie">
+  <img alt="" class="lb-img">
+  <button type="button" class="lb-x" aria-label="Zavřít">×</button>
+  <button type="button" class="lb-s lb-pred" aria-label="Předchozí">←</button>
+  <button type="button" class="lb-s lb-dal" aria-label="Další">→</button>
+</dialog>
+{% endblock %}

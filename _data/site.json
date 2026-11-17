@@ -1,0 +1,85 @@
+{
+  "slug": "byt-dvorakova",
+  "nazev": "Dvořákova 3+1",
+  "url": "https://webhunter-navrhy.github.io/byt-dvorakova/",
+  "base": "/byt-dvorakova/",
+  "lang": "cs",
+  "popis": "Prodej bytu 3+1 po rekonstrukci 2022 v Novém Jičíně, Dvořákova ulice: 68 m², 4. patro s výtahem, balkon, sklep, revitalizovaný dům. 4 590 000 Kč.",
+  "navrh": true,
+  "domena": "",
+  "og_image": "obyvak-4.jpg",
+  "logo": "",
+  "theme_color": "#F6F1EA",
+  "typ": "RealEstateListing",
+  "ico": "",
+  "kontakt": {
+    "email": "martingasperik@gmail.com",
+    "telefon": "+420 773 977 905",
+    "adresa": {
+      "ulice": "Dvořákova",
+      "psc": "",
+      "mesto": "Nový Jičín",
+      "zeme": "CZ"
+    }
+  },
+  "oteviraci_doba": [],
+  "sameas": [],
+  "cenove_rozpeti": "",
+  "formular": {
+    "endpoint": "",
+    "demo": true,
+    "predmet": "Prohlídka bytu Dvořákova 3+1"
+  },
+  "nav": [
+    {
+      "text": "Byt",
+      "href": "#byt"
+    },
+    {
+      "text": "Půdorys",
+      "href": "#pudorys"
+    },
+    {
+      "text": "Dům",
+      "href": "#dum"
+    },
+    {
+      "text": "Okolí",
+      "href": "#okoli"
+    }
+  ],
+  "jsonld_vlastni": {
+    "@context": "https://schema.org",
+    "@type": "RealEstateListing",
+    "name": "Prodej bytu 3+1, 68 m², Dvořákova, Nový Jičín",
+    "url": "https://webhunter-navrhy.github.io/byt-dvorakova/",
+    "image": "https://webhunter-navrhy.github.io/byt-dvorakova/og.jpg",
+    "description": "Byt 3+1 po rekonstrukci 2022, 68 m², 4. patro s výtahem, balkon 5 m², sklep, revitalizovaný dům. Energetická třída C.",
+    "offers": {
+      "@type": "Offer",
+      "price": 4590000,
+      "priceCurrency": "CZK",
+      "availability": "https://schema.org/InStock"
+    },
+    "about": {
+      "@type": "Apartment",
+      "numberOfRooms": 3,
+      "floorSize": {
+        "@type": "QuantitativeValue",
+        "value": 68,
+        "unitCode": "MTK"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Dvořákova",
+        "addressLocality": "Nový Jičín",
+        "addressCountry": "CZ"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 49.59278,
+        "longitude": 18.017496
+      }
+    }
+  }
+}
