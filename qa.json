@@ -1,0 +1,71 @@
+{
+  "url": "https://webhunter-navrhy.github.io/byt-dvorakova/?t=1794942509",
+  "ok": true,
+  "chyby": [],
+  "varovani": [
+    "Roztažené fotky >1,3× (mobil, 1): img/obyvak-4-640.webp nat 640 px, vykresleno 1205 px (1.88×)",
+    "Největší obrázek (mobil) 487 kB > 400 kB: https://webhunter-navrhy.github.io/byt-dvorakova/img/dvur-1280.webp",
+    "Dotykové cíle <40 px na mobilu: 2× (např. g \"Balkon\" 32×128; g \"Komora\" 26×71)"
+  ],
+  "metriky": {
+    "sirky": {
+      "1440": {
+        "scrollWidth": 1440,
+        "pocet_pretekajicich": 0
+      },
+      "1280": {
+        "scrollWidth": 1280,
+        "pocet_pretekajicich": 0
+      },
+      "1024": {
+        "scrollWidth": 1024,
+        "pocet_pretekajicich": 0
+      },
+      "820": {
+        "scrollWidth": 820,
+        "pocet_pretekajicich": 0
+      },
+      "390": {
+        "scrollWidth": 390,
+        "pocet_pretekajicich": 0
+      },
+      "360": {
+        "scrollWidth": 360,
+        "pocet_pretekajicich": 0
+      }
+    },
+    "preneseno_PC_MB": 0.94,
+    "nejvetsi_obrazek_PC": {
+      "kB": 182,
+      "url": "https://webhunter-navrhy.github.io/byt-dvorakova/img/obyvak-4-1920.webp"
+    },
+    "snimku_PC": 9,
+    "preneseno_mobil_MB": 1.3,
+    "nejvetsi_obrazek_mobil": {
+      "kB": 487,
+      "url": "https://webhunter-navrhy.github.io/byt-dvorakova/img/dvur-1280.webp"
+    },
+    "snimku_mobil": 10,
+    "seo": {
+      "title": "Prodej bytu 3+1, 68 m², Dvořákova, Nový Jičín",
+      "description": "Prodej bytu 3+1 po rekonstrukci 2022 v Novém Jičíně, Dvořákova ulice: 68 m², 4. patro s výtahem, bal",
+      "lang": "cs",
+      "h1": 1,
+      "jsonld": [
+        true
+      ],
+      "robots": "noindex, nofollow",
+      "og_image": "https://webhunter-navrhy.github.io/byt-dvorakova/og.jpg",
+      "bez_v": [],
+      "canonical": true,
+      "viewport": true
+    },
+    "maly_dotykovy_cil": 2,
+    "font_nadpis": "Bodoni Moda",
+    "font_text": "Bodoni Moda",
+    "podstranky": {
+      "stranek": 2,
+      "obrazku": 117
+    }
+  }
+}
